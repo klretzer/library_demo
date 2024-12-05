@@ -1,0 +1,15 @@
+global using System.Linq.Expressions;
+global using System.Security.Claims;
+global using Bogus;
+global using LibraryDemo.Data.Contexts;
+global using LibraryDemo.Models.Common;
+global using LibraryDemo.Models.Configuration;
+global using LibraryDemo.Models.Domain;
+global using LibraryDemo.Models.Identity;
+global using Microsoft.AspNetCore.Http;
+global using Microsoft.AspNetCore.Identity;
+global using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
+global using Microsoft.EntityFrameworkCore;
+global using Microsoft.EntityFrameworkCore.ChangeTracking;
+global using Microsoft.EntityFrameworkCore.Diagnostics;
+global using Microsoft.Extensions.Options;

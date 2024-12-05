@@ -1,0 +1,20 @@
+name: library_demo
+
+services:
+  api:
+    build:
+      args:
+        - CONFIG=Debug
+    ports:
+      - "5201:8080"
+    environment:
+      - ASPNETCORE_ENVIRONMENT=Development
+      - ASPNETCORE_URLS=http://host.docker.internal:8080
+  
+  sqlserver:
+    ports:
+      - "1433:1433"
+    environment:
+      - ACCEPT_EULA=Y
+      - MSSQL_SA_PASSWORD=SuperStr0ngPassword!
+      - MSSQL_PID=Developer

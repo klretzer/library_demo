@@ -1,0 +1,15 @@
+.dockerignore
+.env
+.git
+.gitignore
+.vs
+.vscode
+.editorconfig
+.filenesting.json
+launchSettings.json
+Dockerfile*
+*/bin
+*/obj
+*.md
+*.sln
+**/.toolstarget
