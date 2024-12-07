@@ -1,0 +1,16 @@
+name: Unit Tests
+
+on: [push, pull_request]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+    # Checkout the repository.
+    - uses: actions/checkout@v4
+
+    # Run unit tests.
+    - name: Run Tests
+      run: |
+        docker compose up tests -d
